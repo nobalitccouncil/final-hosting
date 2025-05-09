@@ -97,18 +97,28 @@ function generateResult() {
     return;
   }
 
+  // set full and pass marks by course
+  let fullMark, passMark;
+  if (course === "computer") {
+    fullMark = 100;
+    passMark = 33;
+  } else {
+    fullMark = 50;
+    passMark = 17;
+  }
+
   const marks = Number(student.marks);
-  const pass = marks >= 50;
+  const pass = marks >= passMark;
   const emoji = pass ? "🎉" : "😞";
   const grade = pass ? "A" : "F";
   const msg = pass ? "Congratulations" : "Try again";
 
   resultDisplay.innerHTML = `
     <h2 class="glow">${msg}, ${student.name}! ${emoji}</h2>
-    <p>Course: ${course}</p>
+    <p>Course: ${course} (Full Marks: ${fullMark}, Pass Marks: ${passMark})</p>
     ${subCourseInput ? `<p>Sub-Course: ${subCourseInput}</p>` : ""}
     <p>Roll No: ${student.rollNo}</p>
-    <p>Marks: ${marks}</p>
+    <p>Marks: ${marks} / ${fullMark}</p>
     <p>Grade: ${grade}</p>
   `;
   resultDisplay.style.display = "block";
@@ -127,5 +137,4 @@ function downloadMarksheet() {
   link.href = URL.createObjectURL(blob);
   link.download = "Marksheet.txt";
   link.click();
-   }
-   
+}
