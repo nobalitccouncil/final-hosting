@@ -52,10 +52,6 @@ const cuttingStudents = [
   { rollNo: "NITSC/SESS.EX217", name: "priyanca karmakar", marks: 25 }
 ];
 
-
-  
-];
-
 function handleCourseChange() {
   const course = document.getElementById("course").value;
   const subCourseDiv = document.getElementById("subCourseDiv");
