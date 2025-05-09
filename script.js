@@ -26,32 +26,32 @@ const computerStudents = [
 ];
 
 const cuttingStudents = [
-{rollNo: "NITSC/SESS.EX231",name: "mayuri das", marks: 40 }
-{rollNo: "NITSC/SESS.EX196",name: "dipti dutta", marks: 38 }
-{rollNo: "NITSC/SESS.EX195",name: "boby das", marks: 39 }
-{rollNo: "NITSC/SESS.EX202",name: "junmoni das", marks: 45 }
-{rollNo: "NITSC/SESS.EX213",name: "turishma bora", marks: 41 }
-{rollNo: "NITSC/SESS.EX197",name: "amia hazarika", marks: 42 }
-{rollNo: "NITSC/SESS.EX207",name: "urmila das", marks: 36 }
-{rollNo: "NITSC/SESS.EX214",name: "popee bora", marks: 33 }
-{rollNo: "NITSC/SESS.EX236",name: "mamta malpahariya", marks: 31 }
-{rollNo: "NITSC/SESS.EX235",name: "manisha tanti", marks: 32 }
-{rollNo: "NITSC/SESS.EX232",name: "asha karamakar", marks: 30 }
-{rollNo: "NITSC/SESS.EX233",name: "boishnobi mal", marks: 29 }
-{rollNo: "NITSC/SESS.EX234",name: "dipjyoti mal", marks: 28 }
-{rollNo: "NITSC/SESS.EX238",name: "naina karmakar", marks: 29 }
-{rollNo: "NITSC/SESS.EX220",name: "punom bhumij", marks: 31 }
-{rollNo: "NITSC/SESS.EX218",name: "anjali karmakar", marks: 27 }
-{rollNo: "NITSC/SESS.EX0218",name: "anjali karmakar", marks: 26 }
-{rollNo: "NITSC/SESS.EX219",name: "rinki karmakar", marks: 29 }
-{rollNo: "NITSC/SESS.EX224",name: "nobanita bakti", marks: 26 }
-{rollNo: "NITSC/SESS.EX216",name: "hunmoni urang", marks: 43 }
-{rollNo: "NITSC/SESS.EX205",name: "pallabi baruah", marks: 45 }
-{rollNo: "NITSC/SESS.EX227",name: "rakhi", marks: 41 }
-{rollNo: "NITSC/SESS.EX215",name: "madhobi bhuyan", marks: 32 }
-{rollNo: "NITSC/SESS.EX217",name: "priyanca karmakar", marks: 25 }
-{rollNo: "NITSC/SESS.EX",name: "", marks:  }
-{rollNo: "NITSC/SESS.EX",name: "", marks:  }
+  { rollNo: "NITSC/SESS.EX231", name: "mayuri das", marks: 40 },
+  { rollNo: "NITSC/SESS.EX196", name: "dipti dutta", marks: 38 },
+  { rollNo: "NITSC/SESS.EX195", name: "boby das", marks: 39 },
+  { rollNo: "NITSC/SESS.EX202", name: "junmoni das", marks: 45 },
+  { rollNo: "NITSC/SESS.EX213", name: "turishma bora", marks: 41 },
+  { rollNo: "NITSC/SESS.EX197", name: "amia hazarika", marks: 42 },
+  { rollNo: "NITSC/SESS.EX207", name: "urmila das", marks: 36 },
+  { rollNo: "NITSC/SESS.EX214", name: "popee bora", marks: 33 },
+  { rollNo: "NITSC/SESS.EX236", name: "mamta malpahariya", marks: 31 },
+  { rollNo: "NITSC/SESS.EX235", name: "manisha tanti", marks: 32 },
+  { rollNo: "NITSC/SESS.EX232", name: "asha karamakar", marks: 30 },
+  { rollNo: "NITSC/SESS.EX233", name: "boishnobi mal", marks: 29 },
+  { rollNo: "NITSC/SESS.EX234", name: "dipjyoti mal", marks: 28 },
+  { rollNo: "NITSC/SESS.EX238", name: "naina karmakar", marks: 29 },
+  { rollNo: "NITSC/SESS.EX220", name: "punom bhumij", marks: 31 },
+  { rollNo: "NITSC/SESS.EX218", name: "anjali karmakar", marks: 27 },
+  { rollNo: "NITSC/SESS.EX0218", name: "anjali karmakar", marks: 26 },
+  { rollNo: "NITSC/SESS.EX219", name: "rinki karmakar", marks: 29 },
+  { rollNo: "NITSC/SESS.EX224", name: "nobanita bakti", marks: 26 },
+  { rollNo: "NITSC/SESS.EX216", name: "hunmoni urang", marks: 43 },
+  { rollNo: "NITSC/SESS.EX205", name: "pallabi baruah", marks: 45 },
+  { rollNo: "NITSC/SESS.EX227", name: "rakhi", marks: 41 },
+  { rollNo: "NITSC/SESS.EX215", name: "madhobi bhuyan", marks: 32 },
+  { rollNo: "NITSC/SESS.EX217", name: "priyanca karmakar", marks: 25 }
+];
+
 
   
 ];
