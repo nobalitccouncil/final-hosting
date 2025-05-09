@@ -51,7 +51,7 @@ const cuttingStudents = [
   { rollNo: "NITSC/SESS.EX205", name: "pallabi baruah",    marks: 45 },
   { rollNo: "NITSC/SESS.EX227", name: "rakhi",             marks: 41 },
   { rollNo: "NITSC/SESS.EX215", name: "madhobi bhuyan",    marks: 32 },
-  { rollNo: "NITSC/SESS.EX217", name: "priyanca karmakar", marks: 25 }
+  { rollNo: "NITSC/SESS.EX217", name: "priyanka karmakar", marks: 25 }
 ];
 
 function handleCourseChange() {
