@@ -1,34 +1,59 @@
 const computerStudents = [
   { rollNo: "NITSC/SESS.EX119", name: "Jayashree bora", subCourse: "ADCA", marks: 65 },
-  { rollNo: "NITSC/SESS.EX", name: "Charlie", subCourse: "DCA", marks: 90 },
+  { rollNo: "NITSC/SESS.EX120", name: "Babita hazarika", subCourse: "ADCA", marks: 78 },
+  { rollNo: "NITSC/SESS.EX111", name: "arpana talukdar", subCourse: "ADCA", marks: 63 },
+  { rollNo: "NITSC/SESS.EX112", name: "sumi das", subCourse: "ADCA", marks: 58 },
+  { rollNo: "NITSC/SESS.EX124", name: "sharmistha baruah", subCourse: "ADCA", marks: 64 },
+  { rollNo: "NITSC/SESS.EX125", name: "urmila hazarika", subCourse: "ADCA", marks: 68 },
+  { rollNo: "NITSC/SESS.EX106", name: "ankumoni sakia", subCourse: "ADCA", marks: 69 },
+  { rollNo: "NITSC/SESS.EX90", name: "marjana bora", subCourse: "ADCA", marks: 63 },
+  { rollNo: "NITSC/SESS.EX43", name: "rupam tali", subCourse: "DCA", marks: 77 },
+  { rollNo: "NITSC/SESS.EX137", name: "chandan bora", subCourse: "DCA", marks: 59 },
+  { rollNo: "NITSC/SESS.EX105", name: "dev bhuyan", subCourse: "ADCA", marks: 48 },
+  { rollNo: "NITSC/SESS.EX129", name: "nabankur hanzarika", subCourse: "ADCA", marks: 49 },
+  { rollNo: "NITSC/SESS.EX103", name: "aditya verma", subCourse: "ADCA", marks: 47 },
+  { rollNo: "NITSC/SESS.EX127", name: "punom bhumij", subCourse: "ADCA", marks: 56 },
+  { rollNo: "NITSC/SESS.EX128", name: "rahul hazarika", subCourse: "ADCA", marks: 60 },
+  { rollNo: "NITSC/SESS.EX45", name: "rahul tali", subCourse: "DCA", marks: 63 },
+  { rollNo: "NITSC/SESS.EX123", name: "debajani thengal", subCourse: "ADCA", marks: 69 },
+  { rollNo: "NITSC/SESS.EX75", name: "nirmaali das", subCourse: "ADCA", marks: 70 },
+  { rollNo: "NITSC/SESS.EX70", name: "pori saikia", subCourse: "ADCA", marks: 73 },
+  { rollNo: "NITSC/SESS.EX74", name: "ankita das", subCourse: "ADCA", marks: 64 },
+  { rollNo: "NITSC/SESS.EX", name: "Alice", subCourse: "PGDCA", marks: 82 },
+  { rollNo: "NITSC/SESS.EX116", name: "satyajit gogoi", subCourse: "DCA", marks: 53 },
   { rollNo: "NITSC/SESS.EX", name: "Eve", subCourse: "BCA", marks: 38 },
-  { rollNo: "C104", name: "Farah", subCourse: "ADCA", marks: 70 },
-  { rollNo: "C101", name: "Alice", subCourse: "PGDCA", marks: 82 },
-  { rollNo: "C102", name: "Charlie", subCourse: "DCA", marks: 90 },
-  { rollNo: "C103", name: "Eve", subCourse: "BCA", marks: 38 },
-  { rollNo: "C104", name: "Farah", subCourse: "ADCA", marks: 70 },
-  { rollNo: "C101", name: "Alice", subCourse: "PGDCA", marks: 82 },
-  { rollNo: "C102", name: "Charlie", subCourse: "DCA", marks: 90 },
-  { rollNo: "C103", name: "Eve", subCourse: "BCA", marks: 38 },
-  { rollNo: "C104", name: "Farah", subCourse: "ADCA", marks: 70 },
-  { rollNo: "C101", name: "Alice", subCourse: "PGDCA", marks: 82 },
-  { rollNo: "C102", name: "Charlie", subCourse: "DCA", marks: 90 },
-  { rollNo: "C103", name: "Eve", subCourse: "BCA", marks: 38 },
-  { rollNo: "C104", name: "Farah", subCourse: "ADCA", marks: 70 },
-  { rollNo: "C101", name: "Alice", subCourse: "PGDCA", marks: 82 },
-  { rollNo: "C102", name: "Charlie", subCourse: "DCA", marks: 90 },
-  { rollNo: "C103", name: "Eve", subCourse: "BCA", marks: 38 },
-  { rollNo: "C104", name: "Farah", subCourse: "ADCA", marks: 70 },
-  { rollNo: "C101", name: "Alice", subCourse: "PGDCA", marks: 82 },
-  { rollNo: "C102", name: "Charlie", subCourse: "DCA", marks: 90 },
-  { rollNo: "C103", name: "Eve", subCourse: "BCA", marks: 38 },
-  { rollNo: "C104", name: "Farah", subCourse: "ADCA", marks: 70 },
+  { rollNo: "NITSC/SESS.Ex", name: "Farah", subCourse: "ADCA", marks: 70 },
 ];
 
 const cuttingStudents = [
-  { rollNo: "CU201", name: "Bob", marks: 47 },
-  { rollNo: "CU202", name: "Daisy", marks: 60 },
-  { rollNo: "CU203", name: "Nina", marks: 51 }
+{rollNo: "NITSC/SESS.EX231",name: "mayuri das", marks: 40 }
+{rollNo: "NITSC/SESS.EX196",name: "dipti dutta", marks: 38 }
+{rollNo: "NITSC/SESS.EX195",name: "boby das", marks: 39 }
+{rollNo: "NITSC/SESS.EX202",name: "junmoni das", marks: 45 }
+{rollNo: "NITSC/SESS.EX213",name: "turishma bora", marks: 41 }
+{rollNo: "NITSC/SESS.EX197",name: "amia hazarika", marks: 42 }
+{rollNo: "NITSC/SESS.EX207",name: "urmila das", marks: 36 }
+{rollNo: "NITSC/SESS.EX214",name: "popee bora", marks: 33 }
+{rollNo: "NITSC/SESS.EX236",name: "mamta malpahariya", marks: 31 }
+{rollNo: "NITSC/SESS.EX235",name: "manisha tanti", marks: 32 }
+{rollNo: "NITSC/SESS.EX232",name: "asha karamakar", marks: 30 }
+{rollNo: "NITSC/SESS.EX233",name: "boishnobi mal", marks: 29 }
+{rollNo: "NITSC/SESS.EX234",name: "dipjyoti mal", marks: 28 }
+{rollNo: "NITSC/SESS.EX238",name: "naina karmakar", marks: 29 }
+{rollNo: "NITSC/SESS.EX220",name: "punom bhumij", marks: 31 }
+{rollNo: "NITSC/SESS.EX218",name: "anjali karmakar", marks: 27 }
+{rollNo: "NITSC/SESS.EX0218",name: "anjali karmakar", marks: 26 }
+{rollNo: "NITSC/SESS.EX219",name: "rinki karmakar", marks: 29 }
+{rollNo: "NITSC/SESS.EX224",name: "nobanita bakti", marks: 26 }
+{rollNo: "NITSC/SESS.EX216",name: "hunmoni urang", marks: 43 }
+{rollNo: "NITSC/SESS.EX205",name: "pallabi baruah", marks: 45 }
+{rollNo: "NITSC/SESS.EX227",name: "rakhi", marks: 41 }
+{rollNo: "NITSC/SESS.EX215",name: "madhobi bhuyan", marks: 32 }
+{rollNo: "NITSC/SESS.EX217",name: "priyanca karmakar", marks: 25 }
+{rollNo: "NITSC/SESS.EX",name: "", marks:  }
+{rollNo: "NITSC/SESS.EX",name: "", marks:  }
+
+  
 ];
 
 function handleCourseChange() {
