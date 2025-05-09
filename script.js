@@ -110,7 +110,7 @@ function generateResult() {
   const marks = Number(student.marks);
   const pass = marks >= passMark;
   const emoji = pass ? "🎉" : "😞";
-  const grade = pass ? "A" : "F";
+  const grade = pass ? "P" : "F";
   const msg = pass ? "Congratulations" : "Try again";
 
   resultDisplay.innerHTML = `
