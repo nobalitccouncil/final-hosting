@@ -1,6 +1,4 @@
-// ========== COMPUTER STUDENTS ==========
-
-// ----- OLD DATA -----
+// ========== COMPUTER STUDENTS OLD ==========
 const computerStudentsOld = [
   { rollNo: "NITSC/SESS.EX119", name: "Jayashree bora", subCourse: "ADCA", marks: 65 },
   { rollNo: "NITSC/SESS.EX120", name: "Babita hazarika", subCourse: "ADCA", marks: 78 },
@@ -28,12 +26,11 @@ const computerStudentsOld = [
   { rollNo: "NITSC/SESS.Ex", name: "Farah", subCourse: "ADCA", marks: 70 }
 ];
 
-// ----- NEW DATA -----
+// ========== COMPUTER STUDENTS NEW ==========
 const computerStudentsNew = [
   { rollNo: "NITSC/CAN06378", name: "BEAUTI SAIKIA", subCourse: "ADCA", marks: 87 },
   { rollNo: "NITSC/CAN06361", name: "LUCKY BORA", subCourse: "DCA", marks: 87 },
   { rollNo: "NITSC/CAN06360", name: "NILAKSHI CHUTIA", subCourse: "DCA", marks: 87 },
-  { rollNo: "NITSC/CAN06451", name: "MUNMUN RAJKHOWA", subCourse: "PGDCA", marks: 89 },
   { rollNo: "NITSC/CAN06362", name: "DHARITRI BORA", subCourse: "DCA", marks: 88 },
   { rollNo: "NITS/CAN06363", name: "PRATHANA BHARALI", subCourse: "DCA", marks: 88 },
   { rollNo: "NITS/CAN06364", name: "BIPLAB HAZARIKA", subCourse: "DCA", marks: 86 },
@@ -51,14 +48,12 @@ const computerStudentsNew = [
   { rollNo: "NITSC/CAN06369", name: "NISHITA RAJKHOWA", subCourse: "DCA", marks: 83 },
   { rollNo: "NITSC/CAN06379", name: "JYOTSHNA HAZARIKA", subCourse: "PGDCA", marks: 83 },
   { rollNo: "NITSC/CAN06377", name: "MRINNAYEE NATH", subCourse: "ADCA", marks: 87 },
-  { rollNo: "NITSC/CAN06380", name: "GITASHREE SAIKIA", subCourse: "PGDCA", marks: 83 }
+  { rollNo: "NITSC/CAN06380", name: "GITASHREE SAIKIA", subCourse: "PGDCA", marks: 83 },
+  { rollNo: "NITSC/CAN06451", name: "MUNMUN RAJKHOWA", subCourse: "PGDCA", marks: 89 }
 ];
 
-// Merge all computer students
-const computerStudents = [...computerStudentsOld, ...computerStudentsNew];
-
-// ========== CUTTING STUDENTS ==========
-const cuttingStudents = [
+// ========== CUTTING STUDENTS OLD ==========
+const cuttingStudentsOld = [
   { rollNo: "NITSC/SESS.EX231", name: "mayuri das", marks: 40 },
   { rollNo: "NITSC/SESS.EX196", name: "dipti dutta", marks: 38 },
   { rollNo: "NITSC/SESS.EX195", name: "boby das", marks: 39 },
@@ -82,7 +77,11 @@ const cuttingStudents = [
   { rollNo: "NITSC/SESS.EX205", name: "pallabi baruah", marks: 45 },
   { rollNo: "NITSC/SESS.EX227", name: "rakhi", marks: 41 },
   { rollNo: "NITSC/SESS.EX215", name: "madhobi bhuyan", marks: 32 },
-  { rollNo: "NITSC/SESS.EX217", name: "priyanka karmakar", marks: 25 },
+  { rollNo: "NITSC/SESS.EX217", name: "priyanka karmakar", marks: 25 }
+];
+
+// ========== CUTTING STUDENTS NEW ==========
+const cuttingStudentsNew = [
   { rollNo: "NITSC/CAN06383", name: "Lucky Gowala", marks: 89 },
   { rollNo: "NITSC/CAN06385", name: "DIPALI BORAH", marks: 87 },
   { rollNo: "NITSC/CAN06382", name: "DIPIKA BORA", marks: 88 },
@@ -90,50 +89,60 @@ const cuttingStudents = [
   { rollNo: "NITSC/CAN06384", name: "MRINMAYEE NATH", marks: 89 }
 ];
 
-// ========== FUNCTIONS ==========
+// ========== MERGED FINAL ARRAYS ==========
+const computerStudents = [...computerStudentsOld, ...computerStudentsNew];
+const cuttingStudents = [...cuttingStudentsOld, ...cuttingStudentsNew];
+
+// ========== LOGIC FUNCTIONS ==========
 
 function handleCourseChange() {
   const course = document.getElementById("course").value;
-  document.getElementById("subCourseDiv").classList.toggle("hidden", course !== "computer");
+  const subCourseDiv = document.getElementById("subCourseDiv");
+  if (course === "computer") {
+    subCourseDiv.classList.remove("hidden");
+  } else {
+    subCourseDiv.classList.add("hidden");
+  }
 }
 
 function generateResult() {
-  const roll = document.getElementById("rollNumber").value.trim().toLowerCase();
+  const rollInput = document.getElementById("rollNumber").value.trim();
+  const roll = rollInput.toLowerCase();
   const course = document.getElementById("course").value;
-  const subCourse = course === "computer" ? document.getElementById("subCourse").value.trim().toLowerCase() : "";
+  const subCourseInput = course === "computer" ? document.getElementById("subCourse").value.trim() : "";
+  const subCourse = subCourseInput.toLowerCase();
   const resultDisplay = document.getElementById("resultDisplay");
 
-  if (!roll || !course || (course === "computer" && !subCourse)) {
+  if (!rollInput || !course || (course === "computer" && !subCourseInput)) {
     alert("Please fill all fields.");
     return;
   }
 
   let student;
   if (course === "computer") {
-    student = computerStudents.find(s =>
-      s.rollNo.toLowerCase() === roll && s.subCourse.toLowerCase() === subCourse
-    );
+    student = computerStudents.find(s => s.rollNo.toLowerCase() === roll && s.subCourse.toLowerCase() === subCourse);
   } else {
     student = cuttingStudents.find(s => s.rollNo.toLowerCase() === roll);
   }
 
   if (!student) {
-    resultDisplay.innerHTML = `<h3>No record found for Roll No "${roll}" in ${course}</h3>`;
+    resultDisplay.innerHTML = `<h3>No record found for Roll No "${rollInput}" in ${course}</h3>`;
     resultDisplay.style.display = "block";
     return;
   }
 
   const fullMark = 100;
   const passMark = 35;
-  const marks = student.marks;
+  const marks = Number(student.marks);
   const pass = marks >= passMark;
-  const grade = pass ? "P" : "F";
   const emoji = pass ? "🎉" : "😞";
+  const grade = pass ? "P" : "F";
+  const msg = pass ? "Congratulations" : "Try again";
 
   resultDisplay.innerHTML = `
-    <h2 class="glow">${pass ? "Congratulations" : "Try again"}, ${student.name}! ${emoji}</h2>
-    <p>Course: ${course}</p>
-    ${subCourse ? `<p>Sub-Course: ${subCourse}</p>` : ""}
+    <h2 class="glow">${msg}, ${student.name}! ${emoji}</h2>
+    <p>Course: ${course} (Full Marks: ${fullMark}, Pass Marks: ${passMark})</p>
+    ${subCourseInput ? `<p>Sub-Course: ${subCourseInput}</p>` : ""}
     <p>Roll No: ${student.rollNo}</p>
     <p>Marks: ${marks} / ${fullMark}</p>
     <p>Grade: ${grade}</p>
@@ -142,15 +151,17 @@ function generateResult() {
 }
 
 function downloadMarksheet() {
-  const resultDisplay = document.getElementById("resultDisplay");
-  if (!resultDisplay.innerText.trim()) {
+  const display = document.getElementById("resultDisplay");
+  if (display.style.display === "none" || !display.innerText.trim()) {
     alert("Generate a result first!");
     return;
   }
 
-  const blob = new Blob([resultDisplay.innerText], { type: "text/plain" });
+  const text = display.innerText;
+  const blob = new Blob([text], { type: "text/plain" });
   const link = document.createElement("a");
   link.href = URL.createObjectURL(blob);
   link.download = "Marksheet.txt";
   link.click();
-}
+    }
+    
